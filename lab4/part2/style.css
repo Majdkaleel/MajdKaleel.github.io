@@ -1,0 +1,50 @@
+/*
+Name: Majd Kaleel
+File: style.css
+Date: 03 August 2026
+Description: Part 2 - Image Gallery Styles
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.full-img {
+  position: relative;
+  width: 400px;
+}
+
+.displayed-img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0);
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+}
+
+button.dark {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.thumb-bar {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.thumb-bar img {
+  width: 80px;
+  cursor: pointer;
+  border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+/*
+Name: Majd Kaleel
+File: style.css
+Date: 03 August 2026
+Description: Part 3 - Bouncing Balls Styles
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  background: black;
+}

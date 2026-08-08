@@ -1,4 +1,11 @@
 // ===============================
+// Name: Majd
+// File: index.html
+// Date: 07 August 2026
+// Fully corrected accessible version of the MDN Bears article.
+// ===============================
+
+// ===============================
 // Show / Hide Comments (Accessible)
 // ===============================
 

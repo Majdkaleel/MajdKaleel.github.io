@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Accessibility Assessment</title>
+
+<!-- 
+Name: Majd
+File: index.html
+Date: 07 August 2026
+Fully corrected accessible version of the MDN Bears article.
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Welcome to our wildlife website</h1>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our team</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <form class="search" role="search">
+      <label for="search" class="visually-hidden">Search the site</label>
+      <input id="search" type="search" name="q" placeholder="Search query" aria-label="Search the site">
+      <button type="submit">Go</button>
+    </form>
+  </nav>
+</header>
+
+<main>
+
+<article>
+  <h2>The trouble with Bears</h2>
+  <p><strong>By Evan Wild</strong></p>
+
+  <p>
+    Tall, lumbering, angry, dangerous. The real live bears of this world are proud,
+    independent creatures, self-serving and always on the hunt for food. Nothing like
+    the bears you see on TV, like Baloo from renowned documentary, <em>The Jungle Book</em>.
+  </p>
+
+  <p>
+    So what are bears really like, and why does the world's media portray them with
+    such a skewed vision? In this article we try to answer those questions, and give
+    you a real insight into the life of the bear.
+  </p>
+
+  <h3>Types of bear</h3>
+
+  <p>
+    Bears come in two varieties — large and medium. You don't get small bears. If you
+    have seen a small bear, then it was probably a cub from another species.
+  </p>
+
+  <p>
+    Bears can also be classified in terms of their habitat — both large and medium
+    bears are just as at home in urban areas as they are in the countryside.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Bear Type</th>
+        <th scope="col">Coat</th>
+        <th scope="col">Adult size</th>
+        <th scope="col">Habitat</th>
+        <th scope="col">Lifespan</th>
+        <th scope="col">Diet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Wild</td>
+        <td>Brown or black</td>
+        <td>1.4 to 2.8 meters</td>
+        <td>Woods and forests</td>
+        <td>25 to 28 years</td>
+        <td>Fish, meat, plants</td>
+      </tr>
+      <tr>
+        <td>Urban</td>
+        <td>North Face</td>
+        <td>18 to 22</td>
+        <td>Condos and coffee shops</td>
+        <td>20 to 32 years</td>
+        <td>Starbucks, sushi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Habitats and Eating habits</h3>
+
+  <p>
+    Wild bears eat a variety of meat, fish, fruit, nuts, and other naturally growing
+    ingredients. They tend to live in isolation, in caves, tents, or cottages.
+  </p>
+
+  <img src="media/wild-bear.jpg" alt="A wild brown bear standing in a forest">
+
+  <p>
+    Urban bears have abandoned the old ways. They prefer scavenging from dumpsters,
+    bins, and fast food outlets. When food is scarce, they may break into kitchens
+    and steal essentials.
+  </p>
+
+  <img src="media/urban-bear.jpg" alt="An urban bear near a dumpster">
+
+  <h3>Mating rituals</h3>
+
+  <p>
+    Bears are romantic creatures by nature. They woo potential mates by decorating
+    their dwellings — cave paintings for wild bears, mood lighting and Michael Bublé
+    for urban bears.
+  </p>
+
+  <audio controls>
+    <source src="media/bear.mp3" type="audio/mp3">
+    <source src="media/bear.ogg" type="audio/ogg">
+    <p>Your browser does not support HTML5 audio.  
+      <a href="media/bear.mp3">Download the audio file</a>
+    </p>
+  </audio>
+
+  <p><strong>Transcript:</strong> The audio contains a fact file describing bear mating rituals, including expert commentary and sound samples.</p>
+
+  <aside>
+    <h3>About the author</h3>
+    <p>
+      Evan Wild is an unemployed plumber from Doncaster, who has been interested in
+      wildlife since childhood. He once visited Chester Zoo but became ill after
+      eating a doner kebab.
+    </p>
+    <p>
+      He has never seen a bear, but once read a Daily Mail article about them.
+    </p>
+  </aside>
+
+  <section class="comments">
+    <button class="show-hide" aria-expanded="false">Show comments</button>
+
+    <div class="comment-wrapper">
+      <h3>Add comment</h3>
+
+      <form class="comment-form">
+        <div class="flex-pair">
+          <label for="name">Your name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="flex-pair">
+          <label for="comment">Your comment:</label>
+          <textarea name="comment" id="comment" placeholder="Enter your comment"></textarea>
+        </div>
+
+        <button type="submit">Submit comment</button>
+      </form>
+
+      <h3>Comments</h3>
+
+      <ul class="comment-container">
+        <li>
+          <p><strong>Bob Fossil</strong></p>
+          <p>
+            Oh I am so glad you taught me all about the big brown angry guys in the
+            woods. With their sniffing little noses and their bad attitudes, they can
+            sure be a menace — I was thinking of putting them all in a truck and
+            driving them outta here. I run a zoo, you know.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</article>
+
+<aside class="secondary">
+  <h3>Related</h3>
+  <ul>
+    <li><a href="#">The trouble with Bees</a></li>
+    <li><a href="#">The trouble with Otters</a></li>
+    <li><a href="#">The trouble with Penguins</a></li>
+    <li><a href="#">The trouble with Octopi</a></li>
+    <li><a href="#">The trouble with Lemurs</a></li>
+  </ul>
+</aside>
+
+</main>
+
+<footer>
+  <p>© 2050 by nobody. All rights reversed.</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,77 +1,91 @@
-/* Basic page styling */
+/* type */
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background: #f7f7f7;
+  font: 1.2em / 1.5 system-ui;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 800px;
+  max-width: 1200px;
 }
 
-/* Header + navigation */
-header {
-  background: #333;
-  color: white;
-  padding: 20px;
+h1 {
+  text-align: center;
 }
 
-nav ul {
-  list-style: none;
+.copyright {
+  font-size: 0.8em;
+}
+
+/* nav menu */
+
+ul {
   padding: 0;
+  list-style-type: none;
+  text-align: center;
   display: flex;
-  gap: 15px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  flex: auto;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0 20px;
 }
 
-nav a:hover {
+/* General link styles */
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover,
+a:focus {
   text-decoration: underline;
 }
 
-/* Main content */
-main {
-  padding: 20px;
+/* header section layout */
+
+header section {
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "text video"
+    "text video";
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 }
 
-section {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+h1 {
+  grid-area: heading;
 }
 
-/* Images */
-img {
-  display: block;
-  margin: 10px 0;
-  border-radius: 4px;
+header p {
+  grid-area: text;
+  margin: 0;
 }
 
-/* Table styling */
-table {
+video {
+  grid-area: video;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background: white;
+  border: 1px solid black;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
+/* image floats */
+
+figure {
+  float: right;
+  margin-left: 20px;
+  padding: 20px;
+  background: orange;
+  border: 1px solid black;
 }
 
-th {
-  background: #eee;
-  font-weight: bold;
-}
-
-caption {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  font-weight: bold;
+figcaption {
+  font-size: 0.6em;
 }
